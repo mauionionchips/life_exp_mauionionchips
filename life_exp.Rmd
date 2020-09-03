@@ -26,3 +26,18 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Now I will make a plot
+
+# Summary Statistics
+Here I will calculate some summary statistics
+```{r}
+gapminder_unfiltered %>%
+  filter(year >= 2000) %>%
+  group_by(year) %>%
+  summarize(ave = mean(lifeExp))
+```
+
+123
+```
+
